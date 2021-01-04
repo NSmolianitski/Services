@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkube_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mkube_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +40,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srcs" />
+      <recent name="$PROJECT_DIR$/srcs/wordpress" />
       <recent name="$PROJECT_DIR$/srcs/nginx" />
+      <recent name="$PROJECT_DIR$/srcs" />
     </key>
   </component>
   <component name="RunManager">
@@ -65,7 +65,7 @@
       <workItem from="1609489824856" duration="4303000" />
       <workItem from="1609572582221" duration="3534000" />
       <workItem from="1609658240085" duration="5595000" />
-      <workItem from="1609745235696" duration="2142000" />
+      <workItem from="1609745235696" duration="2401000" />
     </task>
     <servers />
   </component>
