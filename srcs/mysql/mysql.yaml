@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql
+  name: mysql-svc
 spec:
   ports:
     - port: 3306
@@ -39,7 +39,7 @@ spec:
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: mysql
+  name: mysql-deployment
 spec:
   selector:
     matchLabels:
@@ -62,7 +62,7 @@ spec:
           ports:
             - containerPort: 3306
               name: mysql
-          command: ["/bin/sh", "-ec", "sleep 1000"]
+#          command: ["/bin/sh", "-ec", "sleep 1000"]
           volumeMounts:
             - name: mysql-persistent-storage
               mountPath: /var/lib/mysql

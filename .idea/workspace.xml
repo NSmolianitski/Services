@@ -10,33 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dactivate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete_mysql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/mysql-volumes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/mysql.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/nginx/nginx.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/ssl/nginx-selfsigned.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/ssl/nginx-selfsigned.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/kustomization.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/ssl/nginx-selfsigned.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/ssl/nginx-selfsigned.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/supervisord.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/wordpress.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/wordpress/wordpress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordpress-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/id_rsa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/id_rsa.pub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/mysql/my.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zdactivate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zmysql_svc_restart.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/znginx_svc_restart.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_nginx_recompile.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkube_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mkube_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_pod_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/nginx_pod_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/server.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dactivate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkube_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zmkube_restart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx_pod_restart.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zserver.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,22 +54,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/mysql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srcs/mysql" />
-      <recent name="$PROJECT_DIR$/srcs/wordpress" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/z" />
       <recent name="$PROJECT_DIR$/srcs/mysql" />
       <recent name="$PROJECT_DIR$/srcs" />
       <recent name="$PROJECT_DIR$/srcs/wordpress" />
-      <recent name="$PROJECT_DIR$/srcs/nginx" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/srcs/mysql" />
+      <recent name="$PROJECT_DIR$/srcs/wordpress" />
     </key>
   </component>
   <component name="RunManager">
@@ -109,6 +98,8 @@
       <workItem from="1609762805568" duration="47000" />
       <workItem from="1609762924926" duration="262000" />
       <workItem from="1609763879405" duration="5157000" />
+      <workItem from="1609918498412" duration="7040000" />
+      <workItem from="1609937402374" duration="9045000" />
     </task>
     <servers />
   </component>
@@ -119,18 +110,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="985" y="512" key="#Notifications" timestamp="1609762688685">
+    <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="985" y="512" key="#Notifications/0.0.2560.1440@0.0.2560.1440" timestamp="1609762688685" />
+    <state x="985" y="512" key="#Notifications/0.0.2560.1440@0.0.2560.1440" timestamp="1609918502152" />
     <state x="740" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609587644480">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="740" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1609587644480" />
-    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609772546130">
+    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609932122171">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1609772546130" />
+    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1609932122171" />
     <state x="965" y="455" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1609762825896">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
