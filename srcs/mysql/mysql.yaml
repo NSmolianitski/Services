@@ -36,7 +36,7 @@ spec:
     app: mysql
   clusterIP: None
 ---
-apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql-deployment
@@ -56,13 +56,11 @@ spec:
           imagePullPolicy: Never
           name: mysql
           env:
-            # Use secret in real usage
             - name: MYSQL_ROOT_PASSWORD
               value: root
           ports:
             - containerPort: 3306
               name: mysql
-#          command: ["/bin/sh", "-ec", "sleep 1000"]
           volumeMounts:
             - name: mysql-persistent-storage
               mountPath: /var/lib/mysql

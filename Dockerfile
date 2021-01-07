@@ -27,6 +27,8 @@ RUN		echo "root:root" | chpasswd
 
 RUN		echo "PermitRootLogin yes" >> etc/ssh/sshd_config
 
+RUN		rm -rf /var/cache/apk/*
+
 EXPOSE	80 443 22
 
 #launch server
