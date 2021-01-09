@@ -10,20 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/supervisord.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/php-fpm.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/www.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zmkube_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zmkube_restart.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +66,13 @@
       <recent name="$PROJECT_DIR$/srcs/wordpress" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -94,7 +94,8 @@
       <workItem from="1609918498412" duration="7040000" />
       <workItem from="1609937402374" duration="9196000" />
       <workItem from="1610004059448" duration="7546000" />
-      <workItem from="1610022042960" duration="246000" />
+      <workItem from="1610022042960" duration="5634000" />
+      <workItem from="1610176568518" duration="5006000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -103,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609951803801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="phpmyadmin service added">
+      <created>1610023352264</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610023352264</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +120,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="mysql is starting now" />
-    <option name="LAST_COMMIT_MESSAGE" value="mysql is starting now" />
+    <MESSAGE value="phpmyadmin service added" />
+    <option name="LAST_COMMIT_MESSAGE" value="phpmyadmin service added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -131,18 +140,18 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="965" y="455" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1609762825896" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1609951803615">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610023352034">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1609951803615" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610023352034" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1610010732186">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1609951805762">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610023354834">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1609951805762" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610023354834" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
