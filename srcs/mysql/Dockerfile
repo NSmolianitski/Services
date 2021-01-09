@@ -7,10 +7,10 @@ RUN		apk update && apk upgrade && \
 RUN		mkdir -p /var/lib/mysql /run/mysqld
 COPY	my.cnf /etc/mysql
 
-RUN		mysql_install_db -u root
+#RUN		mysql_install_db -u root
 
 COPY	mysql.sh /scripts/mysql.sh
-RUN		chmod 755 /scripts/mysql.sh
+RUN		chmod 755 /scripts/*
 
 RUN		rm -rf /var/cache/apk/*
 
