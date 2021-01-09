@@ -7,7 +7,8 @@ WORKDIR /var/www
 
 #apk update
 RUN		apk update && apk upgrade && \
-		apk add php7 php7-fpm php7-opcache php7-gd php7-mysqli php7-zlib php7-curl php7-mbstring php7-json php7-session nginx supervisor
+		apk add php7 php7-fpm php7-opcache php7-gd php7-mysqli php7-zlib php7-curl php7-mbstring php7-json \
+		php7-session nginx supervisor
 
 #copy nginx and supervisor configs
 COPY	nginx.conf /etc/nginx/nginx.conf
@@ -26,7 +27,6 @@ RUN		wget http://files.directadmin.com/services/all/phpMyAdmin/phpMyAdmin-5.0.4-
 COPY	config.inc.php /var/www/phpmyadmin/config.inc.php
 COPY	phpmyadmin.sh /scripts/phpmyadmin.sh
 RUN		chmod 755 /scripts/phpmyadmin.sh
-#RUN		chown nginx:nginx *
 
 RUN		rm -rf /var/cache/apk/*
 
