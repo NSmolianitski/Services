@@ -10,6 +10,7 @@ COPY	my.cnf /etc/mysql
 #RUN		mysql_install_db -u root
 
 COPY	mysql.sh /scripts/mysql.sh
+COPY	database.sql .
 RUN		chmod 755 /scripts/*
 
 RUN		rm -rf /var/cache/apk/*
