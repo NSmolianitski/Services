@@ -2,15 +2,14 @@ FROM    alpine:latest
 
 #apk update
 RUN		apk update && apk upgrade && \
-		apk add mariadb mariadb-client
+		apk add mariadb mariadb-client supervisor
 
 RUN		mkdir -p /var/lib/mysql /run/mysqld
 COPY	my.cnf /etc/mysql
 
-#RUN		mysql_install_db -u root
-
-COPY	mysql.sh /scripts/mysql.sh
-COPY	database.sql .
+COPY	/scripts/ /scripts/
+COPY	database.sql /scripts/
+COPY	supervisord.conf /etc/supervisord.conf
 RUN		chmod 755 /scripts/*
 
 RUN		rm -rf /var/cache/apk/*
@@ -18,4 +17,4 @@ RUN		rm -rf /var/cache/apk/*
 EXPOSE	3306
 
 #launch server
-CMD		["scripts/mysql.sh"]
+CMD		["/scripts/mysql.sh"]
