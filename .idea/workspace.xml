@@ -10,13 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/scripts/save_database.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/grafana/grafana.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zgrafana.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/create_db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/restore_database.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/znginx_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/znginx_svc_restart.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +46,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/mysql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/grafana" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/grafana" />
+      <recent name="$PROJECT_DIR$/srcs/mysql" />
+      <recent name="$PROJECT_DIR$/srcs/wordpress" />
+      <recent name="$PROJECT_DIR$/srcs/phpmyadmin" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/srcs/mysql/scripts" />
       <recent name="$PROJECT_DIR$/srcs/mysql" />
@@ -59,17 +66,11 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/z" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srcs/mysql" />
-      <recent name="$PROJECT_DIR$/srcs/wordpress" />
-      <recent name="$PROJECT_DIR$/srcs/phpmyadmin" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -97,7 +98,8 @@
       <workItem from="1610022042960" duration="5634000" />
       <workItem from="1610176568518" duration="9378000" />
       <workItem from="1610195195490" duration="5644000" />
-      <workItem from="1610263922619" duration="6694000" />
+      <workItem from="1610263922619" duration="7085000" />
+      <workItem from="1610281031798" duration="2133000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -141,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610206979513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mysql imports prepared database now">
+      <created>1610277957276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610277957276</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +164,8 @@
     <MESSAGE value="phpmyadmin is working with mysql now" />
     <MESSAGE value="wordpress is now working with mysql" />
     <MESSAGE value="exported database added" />
-    <option name="LAST_COMMIT_MESSAGE" value="exported database added" />
+    <MESSAGE value="mysql imports prepared database now" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysql imports prepared database now" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -178,18 +188,18 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610269254309" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610206979383">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610277957101">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610206979383" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610277957101" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1610010732186">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610206980799">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610277958654">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610206980799" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610277958654" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
