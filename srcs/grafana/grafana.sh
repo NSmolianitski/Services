@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 
-/grafana/bin/grafana-server
-
-#sleep infinity
+#run supervisord
+/usr/bin/supervisord -c /etc/supervisord.conf

@@ -5,8 +5,8 @@ mysql_install_db -u root
 
 mysqld &
 sleep 3
-sh /scripts/resore_database.sh
-rm -f /scripts/resore_database.sh
+sh /scripts/restore_database.sh
+rm -f /scripts/restore_database.sh
 mysqladmin -u root shutdown
 
 #run supervisord
