@@ -2,10 +2,10 @@ FROM    alpine:latest
 
 #apk update
 RUN		apk update && apk upgrade && \
-		apk add mariadb mariadb-client supervisor
-#		apk add telegraf --repository http://dl-3.alpinelinux.org/alpine/edge/community --allow-untrusted
-#
-#COPY	telegraf.conf /etc/telegraf/
+		apk add mariadb mariadb-client supervisor && \
+		apk add telegraf --repository http://dl-3.alpinelinux.org/alpine/edge/community --allow-untrusted
+
+COPY	telegraf.conf /etc/telegraf/
 
 RUN		mkdir -p /var/lib/mysql /run/mysqld
 COPY	my.cnf /etc/mysql

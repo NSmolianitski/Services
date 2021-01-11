@@ -9,15 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/supervisord.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/telegraf.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/mysql/telegraf.conf" afterDir="false" />
+    <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="grafana dashboard added">
+      <change afterPath="$PROJECT_DIR$/srcs/grafana/grafana.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/grafana/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +50,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/grafana" />
+      <recent name="$PROJECT_DIR$/srcs/telegraf" />
+      <recent name="$PROJECT_DIR$/srcs/influxdb" />
+      <recent name="$PROJECT_DIR$/srcs/mysql/scripts" />
+      <recent name="$PROJECT_DIR$/srcs/mysql" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/srcs/grafana" />
       <recent name="$PROJECT_DIR$/srcs/mysql" />
@@ -61,18 +64,11 @@
       <recent name="$PROJECT_DIR$/srcs/wordpress" />
       <recent name="$PROJECT_DIR$/srcs/nginx" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srcs/telegraf" />
-      <recent name="$PROJECT_DIR$/srcs/influxdb" />
-      <recent name="$PROJECT_DIR$/srcs/mysql/scripts" />
-      <recent name="$PROJECT_DIR$/srcs/mysql" />
-      <recent name="$PROJECT_DIR$/srcs" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -103,7 +99,8 @@
       <workItem from="1610263922619" duration="7085000" />
       <workItem from="1610281031798" duration="4874000" />
       <workItem from="1610349860636" duration="6636000" />
-      <workItem from="1610367655683" duration="1334000" />
+      <workItem from="1610367655683" duration="2018000" />
+      <workItem from="1610381352554" duration="407000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -175,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610365571000</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed script name in mysql">
+      <created>1610371100952</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610371100952</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +197,8 @@
     <MESSAGE value="grafana (with glibc) added" />
     <MESSAGE value="telegraf and influxdb prototypes added" />
     <MESSAGE value="Telegraf added to wordpress, phpmyadmin and nginx. Grafana works with influxdb (which works with telegraf)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Telegraf added to wordpress, phpmyadmin and nginx. Grafana works with influxdb (which works with telegraf)" />
+    <MESSAGE value="fixed script name in mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed script name in mysql" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -216,18 +221,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610269254309" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610365570761">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610383137478">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610365570761" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610383137478" />
+    <state width="254" height="548" key="HiddenNamespacesPopup" timestamp="1610381364411">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="254" height="548" key="HiddenNamespacesPopup/0.0.2560.1440@0.0.2560.1440" timestamp="1610381364411" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1610010732186">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610365573508">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610371102313">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610365573508" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610371102313" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

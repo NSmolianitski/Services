@@ -11,6 +11,7 @@ RUN		apk update && apk upgrade && wget https://dl.grafana.com/oss/release/grafan
 
 COPY	telegraf.conf /etc/telegraf/
 COPY	supervisord.conf /etc/supervisord.conf
+COPY	grafana.db /grafana/data/grafana.db
 
 WORKDIR	/grafana/bin/
 
