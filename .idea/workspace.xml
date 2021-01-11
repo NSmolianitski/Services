@@ -10,19 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/.influxdbv2/configs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/.influxdbv2/influxd.bolt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/docker_telegraf.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/telegraf.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/telegraf.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/telegraf.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zinfluxdb.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ztelegraf.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/influxdb/supervisord.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/phpmyadmin/telegraf.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/wordpress/telegraf.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/telegraf/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/telegraf/docker_telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/telegraf/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/telegraf/telegraf.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/telegraf/telegraf.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ztelegraf.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +59,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/phpmyadmin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/srcs/telegraf" />
-      <recent name="$PROJECT_DIR$/srcs/influxdb" />
-      <recent name="$PROJECT_DIR$/srcs/grafana" />
-      <recent name="$PROJECT_DIR$/srcs/mysql" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/srcs/telegraf" />
       <recent name="$PROJECT_DIR$/srcs/influxdb" />
@@ -72,11 +72,18 @@
       <recent name="$PROJECT_DIR$/srcs/mysql" />
       <recent name="$PROJECT_DIR$/srcs" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/phpmyadmin" />
+      <recent name="$PROJECT_DIR$/srcs/wordpress" />
+      <recent name="$PROJECT_DIR$/srcs/nginx" />
+      <recent name="$PROJECT_DIR$/srcs/influxdb" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -105,7 +112,8 @@
       <workItem from="1610176568518" duration="9378000" />
       <workItem from="1610195195490" duration="5644000" />
       <workItem from="1610263922619" duration="7085000" />
-      <workItem from="1610281031798" duration="4832000" />
+      <workItem from="1610281031798" duration="4874000" />
+      <workItem from="1610349860636" duration="6456000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -163,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610285721866</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="telegraf and influxdb prototypes added">
+      <created>1610292733614</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610292733614</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +194,8 @@
     <MESSAGE value="exported database added" />
     <MESSAGE value="mysql imports prepared database now" />
     <MESSAGE value="grafana (with glibc) added" />
-    <option name="LAST_COMMIT_MESSAGE" value="grafana (with glibc) added" />
+    <MESSAGE value="telegraf and influxdb prototypes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="telegraf and influxdb prototypes added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -202,18 +218,18 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610269254309" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610285721675">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610292733433">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610285721675" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610292733433" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1610010732186">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610285723463">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610292734641">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610285723463" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610292734641" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

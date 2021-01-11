@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-influxd
-#sleep infinity
+#run supervisord
+/usr/bin/supervisord -c /etc/supervisord.conf

@@ -2,8 +2,10 @@ FROM    alpine:latest
 
 #apk update
 RUN		apk update && apk upgrade && \
-		apk add nginx openssl openssh supervisor
+		apk add nginx openssl openssh supervisor && \
+		apk add telegraf --repository http://dl-3.alpinelinux.org/alpine/edge/community --allow-untrusted
 
+COPY	srcs/nginx/telegraf.conf /etc/telegraf/
 RUN		mkdir -p /run/nginx
 
 #copy nginx config

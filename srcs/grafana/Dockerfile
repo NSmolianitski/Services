@@ -8,6 +8,8 @@ RUN		apk update && apk upgrade && wget https://dl.grafana.com/oss/release/grafan
         apk add glibc-2.32-r0.apk && rm -rf grafana-7.3.6.linux-amd64.tar.gz && \
         mv grafana-7.3.6 grafana
 
+WORKDIR	/grafana/bin/
+
 COPY	grafana.sh /scripts/grafana.sh
 RUN		chmod 755 /scripts/grafana.sh
 

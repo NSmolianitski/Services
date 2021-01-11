@@ -2,4 +2,4 @@
 
 /grafana/bin/grafana-server
 
-sleep infinity
+#sleep infinity

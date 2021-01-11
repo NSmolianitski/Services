@@ -8,7 +8,10 @@ WORKDIR /var/www
 #apk update
 RUN		apk update && apk upgrade && \
 		apk add nginx openssl openssh supervisor php7 php7-fpm php7-opcache php7-gd php7-mysqli php7-zlib php7-curl \
-		php7-mbstring php7-json php7-session nginx supervisor
+		php7-mbstring php7-json php7-session nginx supervisor && \
+		apk add telegraf --repository http://dl-3.alpinelinux.org/alpine/edge/community --allow-untrusted
+
+COPY	telegraf.conf /etc/telegraf/
 
 #copy nginx and supervisor configs
 COPY	nginx.conf /etc/nginx/nginx.conf
