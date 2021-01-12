@@ -18,6 +18,8 @@ kubectl apply -f srcs/nginx/nginx.yaml
 kubectl apply -f srcs/influxdb/influxdb.yaml
 kubectl apply -f srcs/grafana/grafana.yaml
 kubectl apply -f srcs/mysql/mysql.yaml
+sleep 3
+kubectl exec $(kubectl get pods | grep mysql | awk '{print $1}') -- /bin/sh -c /scripts/restore_database.sh
 kubectl apply -f srcs/phpmyadmin/phpmyadmin.yaml
 kubectl apply -f srcs/wordpress/wordpress.yaml
 

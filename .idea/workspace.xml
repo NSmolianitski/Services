@@ -10,21 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.db" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/influxdb/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/supervisord.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql-volumes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/wordpress/wordpress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/wordpress.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress-deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zserver.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/restore_database.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/restore_database.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zmkube_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zmkube_restart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zmysql_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zmysql_svc_restart.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +103,7 @@
       <workItem from="1610349860636" duration="6636000" />
       <workItem from="1610367655683" duration="2018000" />
       <workItem from="1610381352554" duration="572000" />
-      <workItem from="1610436141642" duration="3177000" />
+      <workItem from="1610436141642" duration="6284000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -197,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610383149603</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="setup.sh added with optimal minikube settings">
+      <created>1610446316885</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610446316885</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +216,8 @@
     <MESSAGE value="Telegraf added to wordpress, phpmyadmin and nginx. Grafana works with influxdb (which works with telegraf)" />
     <MESSAGE value="fixed script name in mysql" />
     <MESSAGE value="grafana dashboard added" />
-    <option name="LAST_COMMIT_MESSAGE" value="grafana dashboard added" />
+    <MESSAGE value="setup.sh added with optimal minikube settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup.sh added with optimal minikube settings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -240,10 +240,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610437851705" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610383149418">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610446316643">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610383149418" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610446316643" />
     <state width="254" height="548" key="HiddenNamespacesPopup" timestamp="1610381364411">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -252,10 +252,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610383150888">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610446319689">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610383150888" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610446319689" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
