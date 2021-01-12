@@ -10,13 +10,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/ftps.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/ftps.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/ssl/selfsigned.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/ssl/selfsigned.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/supervisord.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/telegraf.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/vsftpd.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/ftps/vsftpd.conf1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zftps.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ft_services.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ft_services.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/restore_database.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/restore_database.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/supervisord.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zmkube_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zmkube_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zmysql_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zmysql_svc_restart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.db" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/id_rsa" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/id_rsa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/id_rsa.pub" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/id_rsa.pub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/.influxdbv2/configs" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/.influxdbv2/configs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/.influxdbv2/influxd.bolt" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/.influxdbv2/influxd.bolt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/loadbalancer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/loadbalancer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/my.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/save_database.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/save_database.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mysql/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/config.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/php-fpm.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/php-fpm.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/www.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/www.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/ssl/nginx-selfsigned.crt" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/ssl/nginx-selfsigned.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/ssl/nginx-selfsigned.key" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/ssl/nginx-selfsigned.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/php-fpm.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/php-fpm.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/ssl/nginx-selfsigned.crt" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/ssl/nginx-selfsigned.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/ssl/nginx-selfsigned.key" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/ssl/nginx-selfsigned.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/wordpress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/wordpress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/wp-config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +101,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/grafana" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/ftps" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srcs/grafana" />
-      <recent name="$PROJECT_DIR$/srcs/mysql" />
-      <recent name="$PROJECT_DIR$/srcs/phpmyadmin" />
-      <recent name="$PROJECT_DIR$/srcs/wordpress" />
-      <recent name="$PROJECT_DIR$/srcs/nginx" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/srcs" />
       <recent name="$PROJECT_DIR$/srcs/grafana" />
@@ -66,11 +114,18 @@
       <recent name="$PROJECT_DIR$/srcs/influxdb" />
       <recent name="$PROJECT_DIR$/srcs/mysql/scripts" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/ftps" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/srcs/grafana" />
+      <recent name="$PROJECT_DIR$/srcs/mysql" />
+      <recent name="$PROJECT_DIR$/srcs/phpmyadmin" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -103,7 +158,8 @@
       <workItem from="1610349860636" duration="6636000" />
       <workItem from="1610367655683" duration="2018000" />
       <workItem from="1610381352554" duration="572000" />
-      <workItem from="1610436141642" duration="6284000" />
+      <workItem from="1610436141642" duration="6390000" />
+      <workItem from="1610454486685" duration="7160000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -196,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610446316885</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Removed mysql database rewrite after container crash">
+      <created>1610452513001</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610452513001</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +280,8 @@
     <MESSAGE value="fixed script name in mysql" />
     <MESSAGE value="grafana dashboard added" />
     <MESSAGE value="setup.sh added with optimal minikube settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup.sh added with optimal minikube settings" />
+    <MESSAGE value="Removed mysql database rewrite after container crash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed mysql database rewrite after container crash" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -228,10 +292,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="740" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610205435884" />
-    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609932122171">
+    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610463205131">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1609932122171" />
+    <state x="973" y="513" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1610463205131" />
     <state x="965" y="455" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1609762825896">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -240,10 +304,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610437851705" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610446316643">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610452512798">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610446316643" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610452512798" />
     <state width="254" height="548" key="HiddenNamespacesPopup" timestamp="1610381364411">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -252,10 +316,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610446319689">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610452514168">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610446319689" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610452514168" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
