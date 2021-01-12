@@ -23,7 +23,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/data"
+    path: "/mnt/data/influx"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -40,7 +40,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: influxdb-deployment
+  name: influxdb
 spec:
   selector:
     matchLabels:
@@ -61,7 +61,7 @@ spec:
               name: influxdb
           volumeMounts:
             - name: influxdb-persistent-storage
-              mountPath: /var/lib/influxdb
+              mountPath: /var/lib/influxdb/
       volumes:
         - name: influxdb-persistent-storage
           persistentVolumeClaim:

@@ -23,7 +23,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/data"
+    path: "/mnt/data/mysql"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -40,7 +40,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-deployment
+  name: mysql
 spec:
   selector:
     matchLabels:
