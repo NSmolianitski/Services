@@ -3,7 +3,7 @@ FROM    alpine:latest
 #apk update
 RUN		apk update && apk upgrade && \
 		apk add supervisor telegraf --repository http://dl-3.alpinelinux.org/alpine/edge/community --allow-untrusted \
-		vsftpd pure-ftpd --repository http://dl-3.alpinelinux.org/alpine/edge/testing --allow-untrusted
+		vsftpd
 
 COPY	telegraf.conf /etc/telegraf/
 COPY	supervisord.conf /etc/supervisord.conf
@@ -16,7 +16,9 @@ COPY	vsftpd.conf /etc/vsftpd/vsftpd.conf
 
 COPY	ftps.sh /scripts/ftps.sh
 RUN		chmod 755 /scripts/ftps.sh && \
-		echo "root:root" | chpasswd
+		echo "root:root" | chpasswd && \
+		chmod 755 / && \
+		chown root:root /
 
 RUN		rm -rf /var/cache/apk/*
 
