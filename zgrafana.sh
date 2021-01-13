@@ -1,7 +1,7 @@
 #!/bin/bash
 
 kubectl delete svc grafana-service
-kubectl delete deployments grafana-deployment
+kubectl delete deployments grafana
 docker rmi grafana_img
 
 docker build -t grafana_img srcs/grafana/.

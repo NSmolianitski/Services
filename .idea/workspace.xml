@@ -11,13 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete_mysql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/ftps/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/ftps/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/scripts/mysql.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/scripts/save_database.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/www.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgrafana.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zgrafana.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zinfluxdb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zinfluxdb.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/znginx_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/znginx_svc_restart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zwordpress_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zwordpress_restart.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1610381352554" duration="572000" />
       <workItem from="1610436141642" duration="6390000" />
       <workItem from="1610454486685" duration="7236000" />
-      <workItem from="1610526672313" duration="3138000" />
+      <workItem from="1610526672313" duration="6948000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -220,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610530497785</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Removed excess files and comments">
+      <created>1610532480783</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610532480783</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +250,8 @@
     <MESSAGE value="Removed mysql database rewrite after container crash" />
     <MESSAGE value="FTPS added (not working yet)" />
     <MESSAGE value="FTPS works fine now" />
-    <option name="LAST_COMMIT_MESSAGE" value="FTPS works fine now" />
+    <MESSAGE value="Removed excess files and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed excess files and comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -267,10 +274,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610437851705" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610530497554">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610532480588">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610530497554" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610532480588" />
     <state width="254" height="548" key="HiddenNamespacesPopup" timestamp="1610381364411">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -279,13 +286,17 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610530498880">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610532482363">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610530498880" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610532482363" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="861" y="342" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1609764031318" />
+    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup" timestamp="1610537121491">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1610537121491" />
   </component>
 </project>

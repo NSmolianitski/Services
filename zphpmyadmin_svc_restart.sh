@@ -1,7 +1,7 @@
 #!/bin/bash
 
 kubectl delete svc phpmyadmin-service
-kubectl delete deployments phpmyadmin-deployment
+kubectl delete deployments phpmyadmin
 docker rmi phpmyadmin_img
 
 docker build -t phpmyadmin_img srcs/phpmyadmin/
