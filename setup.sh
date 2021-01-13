@@ -9,9 +9,10 @@ minikube addons enable metallb
 docker build -t nginx_img .
 docker build -t influxdb_img srcs/influxdb/.
 docker build -t grafana_img srcs/grafana/.
-docker build -t mysql_img srcs/mysql/
-docker build -t phpmyadmin_img srcs/phpmyadmin/
-docker build -t wordpress_img srcs/wordpress/
+docker build -t mysql_img srcs/mysql/.
+docker build -t phpmyadmin_img srcs/phpmyadmin/.
+docker build -t wordpress_img srcs/wordpress/.
+docker build -t ftps_img srcs/ftps/.
 
 kubectl apply -f srcs/loadbalancer.yaml
 kubectl apply -f srcs/nginx/nginx.yaml
@@ -22,5 +23,6 @@ sleep 3
 kubectl exec $(kubectl get pods | grep mysql | awk '{print $1}') -- /bin/sh -c /scripts/restore_database.sh
 kubectl apply -f srcs/phpmyadmin/phpmyadmin.yaml
 kubectl apply -f srcs/wordpress/wordpress.yaml
+kubectl apply -f srcs/ftps/ftps.yaml
 
 minikube dashboard &

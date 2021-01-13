@@ -19,14 +19,11 @@ COPY	nginx.conf /etc/nginx/conf.d/default.conf
 COPY	nginx.conf /etc/nginx/sites-available/default
 COPY	supervisord.conf /etc/supervisord.conf
 COPY	php-fpm.conf /etc/php7
-#COPY	www.conf /etc/php7/php-fpm.d
 
 RUN		wget http://files.directadmin.com/services/all/phpMyAdmin/phpMyAdmin-5.0.4-all-languages.tar.gz && \
 		tar zxvf phpMyAdmin-5.0.4-all-languages.tar.gz && rm phpMyAdmin-5.0.4-all-languages.tar.gz && \
 		mv phpMyAdmin-5.0.4-all-languages /var/www/phpmyadmin
 
-#RUN		mkdir -p /var/www/phpmyadmin/tmp/
-#RUN		chmod 755 /var/www/phpmyadmin/*
 COPY	config.inc.php /var/www/phpmyadmin/config.inc.php
 COPY	phpmyadmin.sh /scripts/phpmyadmin.sh
 RUN		chmod 755 /scripts/phpmyadmin.sh

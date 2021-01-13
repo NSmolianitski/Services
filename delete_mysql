@@ -1,3 +1,0 @@
-kubectl delete svc mysql
-kubectl delete deployment mysql
-kubectl delete -n default persistentvolumeclaim mysql-pv-claim
