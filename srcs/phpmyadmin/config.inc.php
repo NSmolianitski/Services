@@ -32,7 +32,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = 'mysql-service';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
-
+$cfg['PmaAbsoluteUri'] = 'phpmyadmin-service:5000';
 /**
  * phpMyAdmin configuration storage settings.
  */

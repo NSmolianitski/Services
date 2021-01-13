@@ -12,11 +12,7 @@
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zgrafana.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zgrafana.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zinfluxdb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zinfluxdb.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/znginx_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/znginx_svc_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zphpmyadmin_svc_restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zwordpress_restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zwordpress_restart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/config.inc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +63,6 @@
       <recent name="$PROJECT_DIR$/srcs/phpmyadmin" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,7 +94,8 @@
       <workItem from="1610381352554" duration="572000" />
       <workItem from="1610436141642" duration="6390000" />
       <workItem from="1610454486685" duration="7236000" />
-      <workItem from="1610526672313" duration="6948000" />
+      <workItem from="1610526672313" duration="7020000" />
+      <workItem from="1610543177390" duration="6925000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -226,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610532480783</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Nginx now has 307 redirect to wordpress (from HTTP and HTTPS)">
+      <created>1610540843896</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610540843896</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +248,8 @@
     <MESSAGE value="FTPS added (not working yet)" />
     <MESSAGE value="FTPS works fine now" />
     <MESSAGE value="Removed excess files and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed excess files and comments" />
+    <MESSAGE value="Nginx now has 307 redirect to wordpress (from HTTP and HTTPS)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nginx now has 307 redirect to wordpress (from HTTP and HTTPS)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -274,10 +272,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610437851705" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610532480588">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610540843705">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610532480588" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610540843705" />
     <state width="254" height="548" key="HiddenNamespacesPopup" timestamp="1610381364411">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -286,10 +284,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610532482363">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610540845418">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610532482363" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610540845418" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
