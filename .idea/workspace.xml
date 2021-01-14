@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25fb6b02-4aae-4f81-aeb3-34a48ec4528e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <workItem from="1610543177390" duration="7096000" />
       <workItem from="1610607593670" duration="1616000" />
       <workItem from="1610613977237" duration="3917000" />
-      <workItem from="1610623642401" duration="826000" />
+      <workItem from="1610623642401" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="mysql is starting now">
       <created>1609951803801</created>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610620881939</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Returned 22 port (SSH) for nginx">
+      <created>1610626141732</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610626141732</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +273,8 @@
     <MESSAGE value="Nginx now has 307 redirect to wordpress (from HTTP and HTTPS)" />
     <MESSAGE value="Reverse-proxy works fine with phpmyadmin" />
     <MESSAGE value="VSFTPD now dies correctly (with pod)" />
-    <option name="LAST_COMMIT_MESSAGE" value="VSFTPD now dies correctly (with pod)" />
+    <MESSAGE value="Returned 22 port (SSH) for nginx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Returned 22 port (SSH) for nginx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="985" y="512" key="#Notifications" timestamp="1609918502152">
@@ -291,10 +297,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="952" y="416" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1610437851705" />
-    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610620881733">
+    <state x="812" y="222" key="CommitChangelistDialog2" timestamp="1610626141551">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610620881733" />
+    <state x="812" y="222" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1610626141551" />
     <state width="254" height="548" key="HiddenNamespacesPopup" timestamp="1610381364411">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -303,10 +309,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1610010732186" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610620884356">
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1610626145662">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610620884356" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1610626145662" />
     <state x="861" y="342" key="run.anything.popup" timestamp="1609764031318">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

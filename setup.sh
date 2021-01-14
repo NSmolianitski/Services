@@ -6,7 +6,7 @@ minikube --vm-driver=virtualbox start --cpus 2 --memory 4000
 eval $(minikube docker-env)
 minikube addons enable metallb
 
-docker build -t nginx_img .
+docker build -t nginx_img srcs/.
 docker build -t influxdb_img srcs/influxdb/.
 docker build -t grafana_img srcs/grafana/.
 docker build -t mysql_img srcs/mysql/.
