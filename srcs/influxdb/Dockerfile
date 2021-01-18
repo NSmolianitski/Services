@@ -1,4 +1,4 @@
-FROM    alpine:latest
+FROM    alpine:3.11.7
 
 #apk update
 RUN		apk update && apk upgrade && apk add rsync influxdb supervisor && \

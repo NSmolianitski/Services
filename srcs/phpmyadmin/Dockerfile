@@ -1,4 +1,4 @@
-FROM    alpine:latest
+FROM    alpine:3.11.7
 
 RUN		mkdir -p /run/nginx /var/www /var/run/php && \
 		chmod -R 755 /var/*

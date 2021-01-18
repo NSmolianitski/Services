@@ -1,4 +1,4 @@
-FROM    alpine:latest
+FROM    alpine:3.11.7
 
 #apk update
 RUN		apk update && apk upgrade && wget https://dl.grafana.com/oss/release/grafana-7.3.6.linux-amd64.tar.gz && \

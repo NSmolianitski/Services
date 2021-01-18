@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+rm -rf /var/lib/mysql/*
 mysql_install_db -u root
 mysqld &
 sleep 3
@@ -10,3 +11,4 @@ echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root';" | mysql -
 echo "FLUSH PRIVILEGES;" | mysql -u root
 echo "Database created"
 mysqladmin -u root shutdown
+sleep 3
